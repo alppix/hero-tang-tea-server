@@ -2,6 +2,8 @@
   "name": "server",
   "private": true,
   "scripts": {
+    "lint": "eslint",
+    "start": "node dist/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -10,12 +12,18 @@
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm run lint src/**/*.ts",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
-    "husky": "^2.1.0"
+    "@types/node": "^11.13.8",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "husky": "^2.1.0",
+    "typescript": "^3.4.5"
   }
 }
