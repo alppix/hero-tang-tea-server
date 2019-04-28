@@ -1,12 +1,12 @@
 {
-  "name": "server",
+  "name": "hero-tang-tea-server",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.$NODE_ENV.js",
     "lint": "eslint",
     "semantic-release": "semantic-release",
-    "start": "node dist/server",
+    "start": "node ./dist/server",
     "test": "jest"
   },
   "repository": {
