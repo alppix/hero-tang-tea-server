@@ -49,7 +49,7 @@ jobs:
       - run_npm_install_with_cache
       - run:
           name: Run code linter
-          command: npm run lint
+          command: npm run lint src/**/*.ts
 
   release:
     executor: default_executor
