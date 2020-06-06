@@ -55,7 +55,7 @@
     "@graphql-modules/di": "^0.7.1",
     "@okgrow/graphql-scalars": "^0.4.5",
     "apollo": "^2.9.0",
-    "apollo-server-express": "^2.6.2",
+    "apollo-server-express": "^2.14.2",
     "cors": "^2.8.5",
     "delay-cli": "^1.1.0",
     "express": "^4.17.1",
